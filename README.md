@@ -1,4 +1,6 @@
-<img alt="Webpack Starter Basic Loo" src="https://github.com/lifenautjoe/webpack-starter-basic/blob/master/src/assets/logo-on-dark-bg.png?raw=true" width="250">
+Fork of webpack-starter-basic from https://github.com/lifenautjoe
+<!-- <img alt="Webpack Starter Basic Loo" src="https://github.com/lifenautjoe/webpack-starter-basic/blob/master/src/assets/logo-on-dark-bg.png?raw=true" width="250">
+
 
 # webpack-starter-basic
 [![forthebadge](http://forthebadge.com/images/badges/fo-real.svg)](http://forthebadge.com)[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
@@ -312,53 +314,4 @@ To see it all come together, replace the index.html body tag with
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
     </div>
 
-</main><!-- /.container -->
-</body>
-````
-
-Start the development server and `voilà`.
-
-```sh
-npm start
-```
-
-To build for production
-
-```sh
-npm run build
-```
-
-To preview the production build
-```sh
-npm run preview
-```
-
-
-⚠️ Please remember to remove the Google Analytics tag in the `index.html` file as soon as you make the template yours.
-
-```html
-<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101423651-2"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-101423651-2');
-</script>
-```
-
-
-## Websites using this starter kit on the wild
-
-* [Droppable library](https://github.com/lifenautjoe/droppable)
-* [Noel Event Emitter](https://github.com/lifenautjoe/noel)
-* [ChooseIT Wishbot](http://voeux2018.choosit.com/)
-* [Webpack Starter Basic](https://lifenautjoe.github.io/webpack-starter-basic/)
-* [Okuna](https://www.okuna.io/)
-
-Have a website online built with this starter kit and would like to add it to the list? Open an issue!
-
-
-___
-Author [Joel Hernandez](www.lifenautjoe.com)
-
+</main> -->
