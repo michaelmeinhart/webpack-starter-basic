@@ -18,3 +18,45 @@ html, body {
 a{
     color: inherit;
 }
+
+/**
+ * Grid Definitions
+ */
+.content-container {
+    display: grid;
+    grid-template-columns: 
+        [full-start] minmax(0em, 1fr) 
+        [main-start] minmax(0, 1280px) [main-end]
+        minmax(0em, 1fr) [full-end];
+}
+
+.grid-container {
+    grid-column: main;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0 1em;
+
+    // margin: 0 auto;
+    // max-width: 1440px; 
+    
+    &.header-text-container {
+        padding-bottom: 100px;
+    }
+}
+
+header {
+    grid-column: span 3;
+    grid-template-rows: 100px 1fr;
+
+    nav {
+
+    }
+}
+
+main {
+
+}
+
+footer {
+    
+}
