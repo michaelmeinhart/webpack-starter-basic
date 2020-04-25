@@ -26,7 +26,7 @@ a{
     display: grid;
     grid-template-columns: 
         [full-start] minmax(0em, 1fr) 
-        [main-start] minmax(0, 1280px) [main-end]
+        [main-start] minmax(0, $content-width) [main-end]
         minmax(0em, 1fr) [full-end];
 }
 
@@ -58,5 +58,5 @@ main {
 }
 
 footer {
-    
+
 }
