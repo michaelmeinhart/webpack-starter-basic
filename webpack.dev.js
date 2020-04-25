@@ -6,7 +6,11 @@ module.exports = {
     devtool: 'eval-cheap-module-source-map',
     entry: './src/index.js',
     devServer: {
-        contentBase: path.join(__dirname, "dist")
+        contentBase: path.join(__dirname, "dist"),
+        disableHostCheck: true,
+        allowedHosts: [
+            'localhost'
+        ]
     },
     node: {
         fs: 'empty'
@@ -79,7 +83,9 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            title: '',
             template: './index.html',
+            // filename: 'index.html',
             inject: true
         })
     ]
