@@ -1,0 +1,62 @@
+input, label { display: block; }
+
+label { 
+	text-align: left; 
+	font-family: "Open Sans", sans-serif;
+	font-size: 11px;
+	line-height: 13px;
+	letter-spacing: 1px;
+	color: $light-gray;
+	font-size: 14px;
+}
+
+input, textarea { 
+	width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
+	background: none;
+	border: 1px solid;
+	// min-height: 48px;
+	background-color: white;
+	border: none;
+	box-shadow: 5px 5px 15px rgba(0,0,0,.1);
+
+	font-family: "TiemposHeadline";
+	font-size: 18px;
+	line-height: 22px;
+
+	padding: 13px 16px;
+
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: $light-gray;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	  color: $light-gray;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+	  color: $light-gray;
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+	  color: $light-gray;
+	}
+}
+
+textarea { resize: none; }
+
+input[type="submit"] {
+	margin-top: 20px;
+	padding: 17px 0 10px 0px;
+	border: 1px solid black;
+    width: 125px;
+    margin: 20px auto 10px;
+    font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	line-height: 22px;
+
+	@include box-shadow(2px, 2px, 0px, black);
+
+	&:hover {
+		background-color: $very-light-gray;
+	}
+}

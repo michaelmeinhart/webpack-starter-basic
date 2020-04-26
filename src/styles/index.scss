@@ -1,9 +1,10 @@
 @import 'modules/colors';
 @import 'base';
-@import 'modules/typography';
-@import 'modules/buttons';
 // @import 'modules/utility';
 // @import 'modules/animations';
+@import 'modules/typography';
+@import 'modules/buttons';
+@import 'modules/forms';
 
 
 html, body {
@@ -35,13 +36,6 @@ a{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 0 1em;
-
-    // margin: 0 auto;
-    // max-width: 1440px; 
-    
-    &.header-text-container {
-        padding-bottom: 100px;
-    }
 }
 
 header {
