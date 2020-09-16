@@ -87,10 +87,19 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            title: 'Home',
             template: './index.html',
-            // filename: 'index.html',
-            // Inject the js bundle at the end of the body of the given template
-            inject: 'body',
+            filename: 'index.html',
+            page:'home',
+            inject: true
+        }),
+        //new HtmlWebpackPlugin({
+        //    title: 'About',
+        //    template: './about.html',
+        //    filename: 'about.html',
+        //    page:'about',
+        //    inject: true
+        //})
         }),
         new CleanWebpackPlugin(buildPath),
         new FaviconsWebpackPlugin({
