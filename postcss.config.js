@@ -12,9 +12,10 @@ module.exports = {
         /*
         * Remove unused CSS
         */
-        purgecss({
-            content: ['./**/*.html']
-        }),
+        /* Use this plugin below if you want to hate your life wondering why your build wont' work :) */
+        // purgecss({
+        //     content: ['./**/*.html']
+        // }),
         /*
         * Adds vendor prefixes to css attributes
         * https://github.com/postcss/autoprefixer

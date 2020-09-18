@@ -29,6 +29,12 @@ a{
         [full-start] minmax(0em, 1fr) 
         [main-start] minmax(0, $content-width) [main-end]
         minmax(0em, 1fr) [full-end];
+
+
+}
+
+.content-container > * {
+    grid-column: main-start / main-end;
 }
 
 .canvas { /* alternative grid layout */
