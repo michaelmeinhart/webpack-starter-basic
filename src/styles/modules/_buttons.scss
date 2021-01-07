@@ -1,8 +1,11 @@
 button{
     cursor: pointer;
     outline:none;
+    font-size: 18px;
+    line-height: 151%;
     font-weight: 300;
-    background-color: #1dce94;
+    font-family: $font-family;
+    background-color: $color-primary;
     border: none;
     border-radius: 500px;
     color: white;
@@ -16,5 +19,36 @@ button{
 
     &:active{
         background-color: #cbcbcb;
+    }
+
+    &.primary {
+        width: 202px;
+        height: 58px;
+
+        &.header {
+            background-color: #271F57;
+        }
+
+        &:hover{
+            color: $color-tertiary;
+            background-color: $color-secondary;
+        }
+    }
+
+    &.secondary {
+        color: $color-primary;
+        font-family: 'FavoritMono', serif;
+        font-size: 16px;
+        line-height: 161%;
+        background-color: white;
+        border: 2px solid $color-primary;
+        border-radius: 2px;
+        width: 130px;
+        padding: 0.1rem 1rem;
+        
+        &:hover{
+            color: $color-tertiary;
+            background-color: $color-primary;
+        }
     }
 }

@@ -32,7 +32,9 @@ $a-tags-hover: 'a:active, a:hover';
 //          url("/assets/fonts/TiemposHeadlineWeb-Light.woff") format('woff');
 //     font-weight: 100;
 // }
-
+h1,h2,h3,h4,h5 {
+    text-align: left;
+}
 
 h1 {
 	// font-family: 'Montserrat', sans-serif;
