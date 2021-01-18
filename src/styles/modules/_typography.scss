@@ -33,7 +33,20 @@ $a-tags-hover: 'a:active, a:hover';
 //     font-weight: 100;
 // }
 
+body {
+    font-family: $font-family;
+    color: $font-color-light;
+}
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: $font-title-family;
+    color: $font-color;
+    text-align: left;
+
+    &.light, .dark &, .bg-primary & {
+        color: white;
+    }
+}
 h1 {
 	// font-family: 'Montserrat', sans-serif;
     font-family: $font-family;
@@ -51,48 +64,67 @@ h1 {
 }
 
 h2 {
-	// font-family: 'Montserrat', sans-serif;
-    font-family: $font-family;
-	font-size: 20px;
-	line-height: 1.25;
-    font-weight: bold;
+	font-size: 96px;
+    line-height: 106px;
+    font-weight: 400;
+    text-align: left;
     color: $font-color;
 
     padding-top: 16px;
 
     border-top: 2px solid $font-color;
     max-width: 395px;
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 48px;
+        line-height: 110%;
+    }
 }
 
 h3 {
-    // font-family: 'Montserrat', sans-serif;
-    font-family: $font-family;
-    font-size: 22px;
-    line-height: 1.473;
-    font-weight: bold;
-    color: $font-color;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 130%;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 42px;
+        line-height: 100%;
+    }
 }
 
 h4 {
-    // font-family: 'Montserrat', sans-serif;
-    font-family: $font-family;
-    font-size: 20px;
-    line-height: 1.273;
-    font-weight: bold;
+    font-size: 48px;
+    line-height: 110%;
+    font-weight: normal;
     color: $font-color;
 }
 
 h5 {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 54px;
+    margin: 20px 0;
 
+    @media screen and (max-width: $breakpoint-mobile) {
+        line-height: 115%;
+    }
 }
 
 p {
-	// font-family: 'Montserrat', sans-serif;
     font-family: $font-family;
-	font-size: 20px;
-	line-height: 32px;
+    font-size: 18px;
+    font-style: normal;
     font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 0em;
+
     color: $font-color;
+    text-align: left;
+
+    &.light, .dark &, .bg-primary & {
+        color: $font-color-light;
+    }
 }
 
 ul {
@@ -104,6 +136,13 @@ ul {
         font-weight: normal;
         color: $font-color;
     }
+hr {
+    border: none;
+    height: 1px;
+    width: 100%;
+    /* Set the hr color */
+    color: $font-color-light; /* old IE */
+    background-color: $font-color-light; /* Modern Browsers */
 }
 
 #{$a-tags} {

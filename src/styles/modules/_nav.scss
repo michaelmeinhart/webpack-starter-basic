@@ -1,0 +1,218 @@
+section.nav-container {
+    grid-column: full;
+    background-color: $color-secondary;
+
+    .nav-consult-mobile {
+        display: none;
+        background-color: $color-primary;
+        color: white;
+        padding: 0 6vw;
+        
+        p {
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            line-height: 140%;
+            // transition: 0.4s all;
+        }
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        &.open {
+            .nav-consult-mobile {
+                p {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+nav.nav-main {
+    grid-column: main;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: $nav-height;
+    transition: 0.4s all;
+
+    .logo-title {
+        width: 214px;
+        height: 43px;
+        margin-left: 33px;
+        margin-top: 6px;
+
+        .logo-path {
+            fill: white;
+        }
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            width: 138px;
+            height: 28px;
+
+        }
+    }
+
+    .mobile-nav-button {
+        position: absolute;
+        display: none;
+        color: white;
+        top: 13px;
+        right: 10px;
+    }
+
+    ul.nav-links {
+        height: $nav-height;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background-color: $color-secondary;
+
+        img { width: unset; }
+
+        li {
+            display: flex;
+            align-items: center;
+            color: white;
+
+            height: $nav-height;
+
+            font-size: 12px;
+            line-height: 17px;
+            letter-spacing: 0.2em;
+
+            &:after { 
+                font-size: 25px;
+                content: " \00b7"; 
+                color: #787878;
+                vertical-align: sub;
+                padding: 0 $nav-padding 3px;
+            }
+
+            &:nth-child(5) { // resources nav item
+                padding-right: $nav-padding;
+            }
+
+            &:nth-child(6) { // consult nav item
+                padding: 0 3vw;
+                background-color: $color-primary;
+            }
+
+            &:nth-child(5), &:nth-child(6) {
+                &:after {
+                    content: none;
+                }
+            }
+
+            a {
+                color: white;
+                padding-bottom: 3px;
+            }
+
+            &.nav-contact, &.nav-social {
+                display: none;
+                font-weight: normal;
+                color: $color-gray-2;
+        
+                a {
+                    color: $color-gray-2;
+                }
+            }
+        }
+    }
+
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        align-items: flex-start;
+        overflow: hidden;
+        
+        .logo-title {
+            margin-top: 29px;
+            margin-left: 14px;
+        }
+
+        .mobile-nav-button {
+            display: block;
+            // margin-top: 13px;
+        }
+
+        h1 {
+            font-size: 64px;
+            line-height: 100%;
+        }
+
+        ul.nav-links {
+            margin-top: 83px;
+            flex-direction: column;
+            align-items: flex-end;
+            align-self: flex-start;
+            height: unset;
+            padding-right: 6vw;
+            background-color: transparent;
+
+            li {
+                text-align: right;
+                height: 40px;
+                margin-bottom: 15px;
+                
+                a {
+                    color: $font-color;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 140%;
+                }
+
+                &:after {
+                    content: none;
+                }
+
+                &.nav-consult {
+                    display:none;
+                }
+
+                &:nth-child(5) {
+                    padding-right: 0;
+                }
+
+                &.nav-contact {
+                    margin-top: 20px;
+                }
+                &.nav-social {
+                    img {
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+
+        .open > & {
+            height: 500px;
+            background-color: white;
+
+            .logo-title {
+                .logo-path {
+                    fill: $font-color;
+                }
+            }
+
+            ul.nav-links {
+                li {
+                    &.nav-contact, &.nav-social {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

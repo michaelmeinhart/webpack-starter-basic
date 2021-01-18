@@ -57,7 +57,7 @@ module.exports = {
             ,
             {
                 // Load all images as base64 encoding if they are smaller than 8192 bytes
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|jpg|gif|webp|pdf)$/,
                 use: [
                     {
                         loader: 'url-loader',
@@ -72,7 +72,7 @@ module.exports = {
             ,
             {
                 // Load all icons
-                test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+                test: /\.(eot|woff|woff2|svg|ttf|otf)([\?]?.*)$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -86,6 +86,7 @@ module.exports = {
             title: '',
             template: './index.html',
             // filename: 'index.html',
+            page: 'home',
             inject: true
         })
     ]

@@ -1,7 +1,29 @@
 /**
  * Site global variables
  */
-$content-width: 1280px;
+$content-width: 1440px;
+$nav-height: 83px;
+$nav-padding: 1.8vw;
+
+$breakpoint-mobile: 575px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-laptop-large: 1200px;
+$breakpoint-desktop: $content-width;
+
+$content-padding-x: 6vw;
+$content-padding-y: 5vw;
+$content-padding-x-narrow: 4vw;
+$content-padding-y-narrow: 4vw;
+$content-padding-x-narrowest: 1vw;
+$content-padding-y-narrowest: 1vw;
+
+$content-padding-y-tall: 140px;
 
 $font-family: 'Roboto', 'Arial', sans-serif;
+$font-title-family: 'Castoro', serif;
 $font-color: black;
+$font-color-secondary: #4F4F4F;
+:root {
+	
+}

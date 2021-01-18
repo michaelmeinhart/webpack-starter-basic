@@ -1,0 +1,121 @@
+section.footer-container {
+    grid-column: full;
+}
+
+footer {
+    grid-column: main;
+    display: flex;
+    position: relative;
+    padding: $content-padding-x;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        padding: 10vw;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        padding-bottom: 60px;
+        border-bottom: 1px solid #E0E0E0;
+        
+        ul {
+            width: 8vw;
+            max-width: 250px;
+            padding:0;
+            margin:0;
+
+            li {
+                text-align: left;
+                list-style-type: none;
+
+                &:first-child {
+                    font-size: 16px;
+                    font-weight: bold;
+                    line-height: 44px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+
+                font-size: 14px;
+                line-height: 28px;
+                letter-spacing: 0em;
+                text-align: left;
+
+                a {
+                    color: $font-color;
+                    font-weight: normal;
+                    &:hover {
+                        color: $color-gray-3;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            flex-direction: column;
+            padding-bottom: 20px;
+
+            ul {
+                margin-bottom: 20px;
+
+                li {
+                    font-size: 18px;
+                    line-height: 200%;
+
+                    &:first-child {
+                        font-size: 18px;
+                        line-height: 44px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-meta {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 24px;
+
+        p {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 44px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $color-gray-3;
+        }
+
+        img.logo-title {
+            width: 211px;
+            height: 42px;
+        }
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+
+            .logo-title {
+                margin-left: -15px;
+            }
+            
+            p {
+                
+            }
+        }
+    }
+
+    .arrow-scroll {
+        position: absolute;
+        top: $content-padding-x;
+        right: 0;
+     
+        @media screen and (max-width: $breakpoint-mobile) {
+            top: unset;
+            bottom: 215px;
+        }
+    }
+}
