@@ -20,10 +20,73 @@ $content-padding-y-narrowest: 1vw;
 
 $content-padding-y-tall: 140px;
 
+$theme: C;
+
 $font-family: 'Roboto', 'Arial', sans-serif;
+<<<<<<< HEAD
 $font-title-family: 'Castoro', serif;
 $font-color: black;
 $font-color-secondary: #4F4F4F;
 :root {
 	
 }
+=======
+$font-title-family: 'Times New Roman', serif;
+$font-color: black;
+$font-color-light: #FAFAF2;
+
+$color-primary: #1E2F4A;
+$color-secondary: #414A59;
+$color-tertiary: #FAFAF2;
+$color-quaternary: #537D8A;
+// $color-quinary: #AFAFAF;
+
+$light-gray: #CCCCCC;
+$lighter-gray: #EEEEEE;
+
+$body-bg-color: #FAFAF2;
+$header-bg-color: #FAFAF2;
+$header-text-color: $color-primary;
+$header-btn-background-color: #414A59;
+$header-btn-text-color: white;
+@if $theme == B {
+	$body-bg-color: white;
+	$header-bg-color: $color-primary;
+	$header-text-color: white;
+	$header-btn-background-color: white;
+	$header-btn-text-color: $font-color;
+	$header-btn-secondary-bg-color: white;
+	$header-arrow-color-dark: $color-primary;
+	$header-arrow-color-light: #d8dbdf;
+	$header-arrow-color-arrow: #8ABBBD;
+	$header-arrow-color-line: #8ABBBD;
+	$logo-fill-color: white;
+	$section-about-bg-color: #FFFFFF;
+	$section-about-text-color: white;
+	$section-tagline-bg-color: $color-primary;
+	$section-row-color-1: #234B61;
+	$section-row-color-2: #8ABBBD;
+	$section-row-color-3: #232A61;
+	$section-why-color: #1E2F4A;
+	$section-contact-color: white;
+} @else if $theme == C {
+	$body-bg-color: white;
+	$header-bg-color: $body-bg-color;
+	$header-text-color: $color-primary;
+	$header-text-color: $color-primary;
+	$header-arrow-color-dark: $color-primary;
+	$header-arrow-color-light: $color-primary;
+	$header-btn-background-color: $color-primary;
+	$header-arrow-color-arrow: $color-primary;
+	$header-arrow-color-line: $color-primary;
+	$logo-fill-color: $color-primary;
+	$section-about-bg-color: #F3F3F2;
+	$section-about-text-color: $font-color;
+	$section-tagline-bg-color: $body-bg-color;
+	$section-row-color-1: #234B61;
+	$section-row-color-2: #8ABBBD;
+	$section-row-color-3: #232A61;
+	$section-why-color: #1E2F4A;
+	$section-contact-color: $body-bg-color;
+}
+>>>>>>> 361eb67787a339dcadc751233061f85a67573bb5

@@ -100,7 +100,6 @@ module.exports = {
         //    page:'about',
         //    inject: true
         //})
-        }),
         new CleanWebpackPlugin(buildPath),
         new FaviconsWebpackPlugin({
             // Your source logo
