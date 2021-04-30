@@ -11,16 +11,6 @@ $a-tags-hover: 'a:active, a:hover';
 //          url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 // }
 
-<<<<<<< HEAD
-// @font-face {
-//     font-family: 'MyWebFont';
-//     src: url('myfont.woff2') format('woff2'),
-//          url('myfont.woff') format('woff'),
-//          url('myfont.ttf') format('truetype');
-// }
-
-=======
->>>>>>> 9fc793821e4a5858063f7243c0c9834cf479994c
 /** 
  * Tiempos Headline Fonts
  */
@@ -94,6 +84,11 @@ h2 {
 
     border-top: 2px solid $font-color;
     max-width: 395px;
+
+    @media screen and (max-width: $breakpoint-laptop) {
+        font-size: 70px;
+        line-height: 92%;
+    }
     @media screen and (max-width: $breakpoint-mobile) {
         font-size: 48px;
         line-height: 110%;
@@ -106,6 +101,10 @@ h3 {
     font-size: 64px;
     line-height: 130%;
 
+    @media screen and (max-width: $breakpoint-laptop) {
+        font-size: 62px;
+        line-height: 92%;
+    }
     @media screen and (max-width: $breakpoint-mobile) {
         font-size: 42px;
         line-height: 100%;
@@ -117,6 +116,11 @@ h4 {
     line-height: 110%;
     font-weight: normal;
     color: $font-color;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        font-size: 36px;
+        line-height: 92%;
+    }
 }
 
 h5 {
@@ -144,6 +148,10 @@ p {
 
     &.light, .dark &, .bg-primary & {
         color: $font-color-light;
+    }
+    @media screen and (max-width: $breakpoint-mobile) {
+        // font-size: 21px;
+        // line-height: 25px;
     }
 }
 
