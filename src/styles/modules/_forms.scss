@@ -13,6 +13,10 @@ label {
 	margin-bottom: 15px;
 }
 
+input {
+	height: 60px;
+}
+
 input, textarea { 
 	width: 100%;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -32,6 +36,10 @@ input, textarea {
 	padding: 13px 16px;
 	margin-bottom: 30px;
 
+	&:focus-visible {
+		outline: none;
+	}
+
 	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 	  color: $light-gray;
 	}
@@ -44,11 +52,35 @@ input, textarea {
 	&:-moz-placeholder { /* Firefox 18- */
 	  color: $light-gray;
 	}
+
+	// &.mce_inline_error {
+	// 	border: 1px solid red;
+	// }
+}
+.mc-field-group {
+	position: relative;
+
+	&.text-area {
+		div.mce_inline_error {
+			bottom: 6px;
+		}
+	}
+}
+div.mce_inline_error {
+	color: red;
+	position: absolute;
+    right: 0;
+    bottom: -12px;
+	font-size: 11px;
+}
+#mce-responses {
+	width: 90%;
+    line-height: 150%;
 }
 
-input[type="text"] {
-	height: 90px;
-}
+// input[type="text"] {
+// 	height: 90px;
+// }
 textarea { resize: none; }
 
 input[type="submit"] {
@@ -72,6 +104,19 @@ input[type="submit"] {
 		background-color: $very-light-gray;
 		color: $font-color;
 	}
+}
+div#mce-error-response {
+	color: red;
+	// font-weight: bold;
+	text-align: left;
+}
+div#mce-success-response {
+	color: green;
+	// font-weight: bold;
+	text-align: left;
+}
+.response, div.mce_inline_error {
+	font-family: 'Helvetica', sans-serif;;
 }
 
 .contact-option-container {

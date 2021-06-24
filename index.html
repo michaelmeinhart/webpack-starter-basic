@@ -22,10 +22,41 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 </head>
 <body page='<%= htmlWebpackPlugin.options.page %>'>
-    <header><%= require('html-loader!./src/partials/nav.html') %></header>
-    <main></main>
-        <!-- Include footer partial -->
-        <%= require('html-loader!./src/partials/footer.html') %>
+    
+    <header class="content-container">
+        <section class="header-container grid-container">
+            <picture>
+                <source type="image/webp" media="(max-width: 575px)" srcset="
+                    <%= require('./src/assets/img/home/header-dishes-mobile.webp')%>">
+                <source media="(max-width: 575px)" srcset="
+                    <%= require('./src/assets/img/home/header-dishes-mobile.png')%>">
+                <source type="image/webp" srcset="
+                    <%= require('./src/assets/img/home/header-dishes.webp')%>">
+                <img class="header-dishes" src="<%= require('./src/assets/img/home/header-dishes.png')%>" />
+            </picture>
+            <div class="header-text">
+                <h1 class="header-title">HEADER TITLE</h1>
+                <p>Header Text</p>
+            </div>
+        </section>
+    </header>
+    
+    <main class="content-container">
+
+        <section class="about-container content-container">
+            <div class="section-about section-content">
+                
+            </div>
+        </section>
+
+        <section class="section-approach section-content">
+
+        </section>
+
+    </main>
+    
+    <!-- Include footer partial -->
+    <%= require('html-loader!./src/partials/footer.html') %>
 
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101423651-2"></script> -->
